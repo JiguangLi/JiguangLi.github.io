@@ -1,12 +1,26 @@
----
-layout: post
-title: "Compilation Failed"
-date: 2019-06-16
----
-<h1>R Package Compilation Failed</h1>
+<html>
+  <head>
+    <title>Compilation Failed </title>
+    
+    <link rel="stylesheet" type="text/css" href="/css/main.css">
+  
+  </head>
 
 
+  <body>
+    <nav>
+<ul>
+<li><a href="/">Home</a></li>
+<li><a href="/portfolio">Portfolio</a></li>
+<li><a href="/cv">CV</a></li>
+<li><a href="/blog">Blog</a></li>
+</ul>
+    </nav>
+<div class="container">
+<h1>16 June 2019</h1>
 
+
+<div class="post">
  <p>
    I am currently working on an astrostatistics project, where I need to transcribe recently published blaze function fitting code written in R to 
 Python. The motivation is that most of the astronomers are big funs of python but do not use much of R. I have never used R before
@@ -36,3 +50,27 @@ After some trial and fail errors, the following approach worked for me (I used m
 <p>
 My current version of R is 8.3.0 and hope this blog can be helpful for my fellow new R users who encountered compilation error when installing R packages
 </p>  
+
+
+</div>
+
+
+</div>
+  
+  <footer>
+   <ul>
+   <li><a href="jiguang.li@yale.edu">email</a></li>
+   </ul>
+  </footer>
+  </body>
+
+</html>
+
+
+
+
+
+
+
+
+
