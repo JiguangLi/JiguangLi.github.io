@@ -3,14 +3,18 @@ layout: post
 title: "Compilation Failed"
 date: 2019-06-16
 ---
+
+<title>R Package Compilation Failed</title>
+
+
  <p>
-   I am currently working on an astrostatistics project, where I need to transcribing a recently published blaze function fitting code written in R to 
+   I am currently working on an astrostatistics project, where I need to transcribe recently published blaze function fitting code written in R to 
 Python. The motivation is that most of the astronomers are big funs of python but do not use much of R. I have never used R before
 and I joked to my parents that my current work is like to translate German into Chinese. "But you don't know any German", they commented, unaware of my over exaggeration.  
   </p>  
 
  <p>
-  I had a smooth installation of R and RStudio, but I had problem installing an essential package called "alphahull", which is to
+  I had a smooth installation of R and RStudio, but I had problem installing an essential package called "alphahull", which is 
 used to compute the alpha-shape and alpha-convex hull of a given sample of points in the plane. To learn more about alpha hull and
 alpha shape, you can check <a href="https://cran.r-project.org/web/packages/alphahull/index.html"> here </a>. It is ususally easy
 to install a R-package -just type install.packages("pakage_name") in R console. However, when I tried to run nstall.packages("alphahull"),
