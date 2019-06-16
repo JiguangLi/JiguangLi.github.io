@@ -17,7 +17,7 @@
 </ul>
     </nav>
 <div class="container">
-<h1>31 May 2019</h1>
+<h1> May 31, 2019: My First Blog Page</h1>
 
 
 <div class="post">
