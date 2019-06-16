@@ -1,7 +1,6 @@
-blog title: 2019-05-31-first-post.md
 ---
 layout: post
-title: " Compilation Failed"
+title: "Compilation Failed"
 date: 2019-06-16
 ---
  <p>
@@ -24,12 +23,12 @@ computer science tends to start from a very higher level (programming methodolog
 
 <p>
 After some trial and fail errors, the following approach worked for me (I used mac):
-1. brew install gcc
-3. ls /usr/local/Cellar/gcc/version-of-R                
-4. sudo vi /Library/Frameworks/R.framework/Resources/etc/Makeconf  
-5. Delete the line starting with FlIBS and replace with  FLIBS=-L/usr/local/Cellar/gcc/Version-of-R
+<br>1. brew install gcc
+<br>2. ls /usr/local/Cellar/gcc/version-of-R                
+<br>3. sudo vi /Library/Frameworks/R.framework/Resources/etc/Makeconf  
+<br>4. In the vi editor, delete the line starting with FlIBS and replace with  FLIBS=-L/usr/local/Cellar/gcc/Version-of-R
 </p>  
 
 <p>
-My current version of R is 8.3.0 and I hope this blog can help my fellow new R users who encountered compilation error when installing R packages
+My current version of R is 8.3.0 and hope this blog can be helpful for my fellow new R users who encountered compilation error when installing R packages
 </p>  
