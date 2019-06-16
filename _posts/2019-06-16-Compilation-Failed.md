@@ -48,7 +48,7 @@ After some trial and fail errors, the following approach worked for me (I used m
 </p>  
 
 <p>
-My current version of R is 8.3.0 and hope this blog can be helpful for my fellow new R users who encountered compilation error when installing R packages
+My current version of R is 8.3.0 and hope this blog can be helpful for my fellow new R users.
 </p>  
 
 
