@@ -17,7 +17,7 @@
 </ul>
     </nav>
 <div class="container">
-<h1>16 June 2019</h1>
+<h1>June 16, 2019 : R Package Compilation Failed</h1>
 
 
 <div class="post">
