@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html>
   <head>
     <title>Jiguang Li</title>
@@ -12,7 +11,7 @@
     <nav>
 <ul>
 <li><a href="/">Home</a></li>
-<li><a href="/about">Portfolio</a></li>
+<li><a href="/portfolio">Portfolio</a></li>
 <li><a href="/cv">CV</a></li>
 <li><a href="/blog">Blog</a></li>
 </ul>
@@ -23,14 +22,14 @@
 <p class="meta">31 May 2019</p>
 
 <div class="post">
-Welcome to my first blog page. 🎉 -built in Washington D.C.
+<p>Welcome to my first blog page. 🎉 -built in Washington D.C. </p>
 
-I created this blog to encourage myself to write and think more of mathematics, statistics, computer science, and every possible non-academic fun stuff. 
+<p>I created this blog to encourage myself to write and think more of mathematics, statistics, computer science, and every possible non-academic fun stuff. </p>
 
 
-欢迎来到我的第一个博客首页 🎉 - 建于DC
+<p>欢迎来到我的第一个博客首页 🎉 - 建于DC </p>
 
-我会在这个平台上记录和思考更多的数学，统计，计算机，与生活。
+<p>我会在这个平台上记录和思考更多的数学，统计，计算机，与生活。</p>
 
 
 </div>
