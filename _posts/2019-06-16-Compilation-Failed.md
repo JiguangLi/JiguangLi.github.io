@@ -24,7 +24,7 @@
  <p>
    I am currently working on an astrostatistics project, where I need to transcribe recently published blaze function fitting code written in R to 
 Python. The motivation is that most of the astronomers are big funs of python but do not use much of R. I have never used R before
-and I joked to my parents that my current work is like to translate German into Chinese. "But you don't know any German", they commented, unaware of my over exaggeration.  
+and I joked to my parents that my current work is like to translate German into Chinese. "But you don't know any German", they were worried and unaware of my exaggeration. I later explained to them how programming skill of one language can be easily transfered to another language.
   </p>  
 
  <p>
