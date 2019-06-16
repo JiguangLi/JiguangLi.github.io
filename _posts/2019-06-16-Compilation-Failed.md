@@ -3,8 +3,8 @@ layout: post
 title: "Compilation Failed"
 date: 2019-06-16
 ---
+<h1>R Package Compilation Failed</h1>
 
-<title>R Package Compilation Failed</title>
 
 
  <p>
