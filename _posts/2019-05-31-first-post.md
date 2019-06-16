@@ -1,6 +1,6 @@
 <html>
   <head>
-    <title>Jiguang Li</title>
+    <title>My First Blog Page</title>
     
     <link rel="stylesheet" type="text/css" href="/css/main.css">
   
@@ -18,7 +18,6 @@
     </nav>
 <div class="container">
 
-  <h1>Jiguang Li</h1>
 <p class="meta">31 May 2019</p>
 
 <div class="post">
