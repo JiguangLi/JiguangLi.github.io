@@ -23,11 +23,11 @@
 <div class="post">
  <p>
  Recently, I have been working on transcribing some R projects in Python and the goal is to reproduce the exact same
- result in Python as in R. As a new R user, I just realized that R's power to perform statistical analysis. For example,
- if I want to run a local polynomial regression, there exists a build-in function in R and I just need to type:
- ''' python
- S_fit <- loess(y ~ x, data = df, degree = 2, span = d,  control = loess.control(surface = "direct")) 
- '''
+ result in Python as in R. As a new R user, I just learnt to appreciate R's power to perform statistical analysis over python. For example,
+ if I want to run a local polynomial regression, there exists a build-in function, loess in R:
+<code> S_fit <- loess(y ~ x, data = df, degree = 2, span = d,  control = loess.control(surface = "direct"))</code><br>
+ 
+ 
  </p>  
 
  
