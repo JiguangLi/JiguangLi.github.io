@@ -30,9 +30,9 @@ Loess function in R probably gives you all possible freedom to run loess, such a
  </p>
    
  <p> In my project, I started by using the loess python package and tried to do a linear interpolation myself. The result did not entirely agree with the original R code (though pretty similar), given that I did the interpolation myself. This gave me some trouble since I needed to show my python implementation was correct and could produce the same result. The only way out is if I could call R functions within Python. And yes, I did some basic research and this can actually be done using the rpy2 package as following: 
+  <br>
   <br> <code> from rpy2.robjects import r</code>
   <br> <code> import rpy2.robjects as robjects</code>
-  <br>
   <br>
   <br> <code> x = robjects.FloatVector(list(x))</code>
   <br> <code> y = robjects.FloatVector(list(y))</code>
