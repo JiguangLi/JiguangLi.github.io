@@ -48,8 +48,7 @@
   The AFS and the ALSFS algorithms can be used to flatten the spectrum continuum, an important data analysis step in spectroscopic analysis.
  </p>
  <p>
-  Both algorithms start by approximating the shape of a spectrum using a generalization of convex hull called alpha shape. Then they apply
-  local polynomial regresssion to estimate the corresponding blaze function. The key difference between these two algorithms is that AFS
+  Both algorithms use alphashape to approximate the shape of a spectrum and estimate its corresponding blaze function using local polynimail regression. The key difference between these two algorithms is that AFS
   does not require a lab source spectrum, whereas ALSFS is preferred when such a reference is available. You can check out a working demo
   of these two algorithms <a href="https://github.com/JiguangLi/Blaze_Function/blob/master/demo.pdf">here </a>.
  </p>
@@ -109,8 +108,8 @@ of these two statistical metrics look alike by the following histograms.
       <p> In this <a href="https://drive.google.com/file/d/1qoNci86LfVH5hYBLwcNyNH8ewJEWJISf/view?usp=sharing"> optimization project</a>, I explored the problem of finding the transition probabilities on the edges of
 a graph that gives the fastest mixing Markov chain as proposed by <a href="https://web.stanford.edu/~boyd/papers/pdf/fmmc.pdf"> Stephen Boyd, Persi Diaconis, and Lin Xiao </a>.
 The novel part of this project is that I use weak duality to deduce the optimal transition probability matrix P* for star graphs analytically (See Conjecture 5.2 of my project paper). My proof of this conjecture was
-inspired by <a href="https://web.stanford.edu/~boyd/papers/pdf/fmmc_path.pdf"> the proof a similar result for line graph. In addition, I present
-a detailed derivation of the dual problem of semidefinite program (see theorem 4.1), which the authors have omitted. </a>
+inspired by <a href="https://web.stanford.edu/~boyd/papers/pdf/fmmc_path.pdf"> the proof a similar result for line graph </a>. In addition, I present
+a detailed derivation of the dual problem of semidefinite program (see theorem 4.1), which the original authors have omitted.
 
 </p>
 
