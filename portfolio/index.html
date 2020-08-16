@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-  
+
 <head>
 <title>Project Page</title>
 <link rel="stylesheet" type="text/css" href="/css/main.css">
@@ -24,7 +24,7 @@
 </style>
 </head>
 <body>
-  
+
 <nav>
 <ul>
 <li><a href="/">Home</a></li>
@@ -35,42 +35,37 @@
 
 <h1>RESEARCH INTERESTS</h1>
 
-<p> My research interests include machine learning, optimization techniques, and high-dimensional statistics. In particular, I am interested in applying novel statistical methods to tackle real-world problems such as astronomy, operation research, and social sciences.  
+<p> My research interests include machine learning, optimization techniques, and high-dimensional statistics. In particular, I am interested in applying novel statistical methods to tackle real-world problems such as astronomy, operation research, and social sciences.
 </p>
+
+<br>
 <br>
 
-<h2> 3D Reconstruction Software</h2>
+<h2>Astrostatistics</h2>
+<h3> <a href="https://github.com/JiguangLi/Blaze_Function">1).Two Methods to Remove Blaze Function from Echelle Spectrum Orders</a></h3>
   <p>
-    In this project, we implemented 3DKinect, an easy-to-use software
-    that streamlines the seential components in the 3D reconstruction pipeline. Our software has five major functionalities:
-     (a) upload, visualize, capture, and save point cloud data. (b) View recorded RGB-D image and use mouse to rotate and zoom the point cloud data on screen; (c) change the size and color of the
-    points on screen; (d) edit and crop existing point clouds. (e)stitch multiple point cloud data together(using the Iterative Closest Point Algorithm) 
-    and demonstrate the process of registration step by step. 
-    
-  </p>  
-  <p>
-   You can also check the <a href="https://drive.google.com/file/d/1tIjJFklwZ_KyMsSbFavCA7u2vSJE56Wy/view?usp=sharing"> poster </a> and a brief
-    <a href="https://drive.google.com/file/d/1IS_OXb7clv2AK74qM2WEbDP4SgexX2h9/view?usp=sharing"> report </a> of our project.
-   </p>
-  <p>
-    The following video is a short demo of 3D registration of a still chair using our 3DKinect software.
-  </p>  
-  <iframe src="https://drive.google.com/file/d/1KnZFweZT4mUcrd9IJn-QIPCapK8W1cCc/preview" width="640" height="480"></iframe>
- <br> 
- <br>
+  This project involves the Python implementation of the Alpha-shape Fitting to Spectrum algorithm (AFS) and the Alpha-shape and Lab Source Fitting to Spectrum algorithm (ALSFS) proposed by Xin Xu et al (2019), whose paper is available <a href="https://arxiv.org/pdf/1904.10065.pdf"> here </a>.
+  The AFS and the ALSFS algorithms can be used to flatten the spectrum continuum, an important data analysis step in spectroscopic analysis.
+ </p>
+ <p>
+  Both algorithms start by approximating the shape of a spectrum by using a generalization of convex hull called alpha shape. Then they apply
+  local polynomial regresssion to estimate the corresponding blaze function. The key difference between these two algorithms is that AFS
+  does not require a lab source spectrum, whereas ALSFS is preferred when such a reference is available. You can check out a working demo
+  of these two algorithms <a href="https://github.com/JiguangLi/Blaze_Function/blob/master/demo.pdf">here </a>.
+ </p>
 
-<h2>Astrostatistics: Quasar Variability</h2>
+ <h3> 2).Quasar Variability </h3>
 <p> Quasars are highly variable astronomical sources and there are many statistical metrics(variability indices) that quantify how variable a quasar is.
-In this project, we studied the imaging data of more than 330,000 quasars from the Catalina Sky Survey (CSS), which provided magnitude 
+In this project, we studied the imaging data of more than 330,000 quasars from the Catalina Sky Survey (CSS), which provided magnitude information
 repeatedly over 8 years. The primary goal of this research is to determine whether there is a significant difference in the statistical distributions of variability indices between radio-loud and
 radio-quiet quasars.
 </p>
- <p>We computed eleven different variability indices and built data visualizations for each to demonstrate the statistical difference between radio-quiet and radio-
+ <p> We computed eleven different variability indices to compare the difference in variability between radio-quiet and radio-
 loud quasars. While most of the variability indices of these two populations are distributed in a similar manner, the results of Two-sample Kolmogorov-Smirnov test and Anderson-Darling test
-both suggest that Robust median statistics and SB variability metrics could reject the null hypothesis (same population) at less than 1% level, even though the statistical distributions 
-of these two statistical metrics look very similar as shown by the following histograms.
+both suggest that Robust median statistics and SB variability metrics could both reject the null hypothesis (same population) at less than 1% level, even though the statistical distributions
+of these two statistical metrics look alike by the following histograms.
  </p>
-  
+
   <div class="row">
   <div class="column">
     <img src="robust_median.png" alt="Robust Median" style="width:100%">
@@ -79,13 +74,55 @@ of these two statistical metrics look very similar as shown by the following his
     <img src="sb_index.png" alt="SB Index" style="width:100%">
   </div>
 </div>
-  
+
 <p>This result may point to physical differences in accretion behavior between these two populations of quasars. More information about this project can be found <a href="https://drive.google.com/open?id=1s9yV_41rw2_1R8lJbcArTS0LL0kR1LJc"> here </a>.</p>
   <br>
+
+
+  <h2>Expository Writings in Probablity/Statistics</h2>
+  <h3> <a href="https://github.com/JiguangLi/Blaze_Function">1) Optimal Transport </a></h3>
+    <p>
+    yeah
+   </p>
+   <p>
+    yeah
+   </p>
+
+   <h3> <a href="https://drive.google.com/open?id=18Kv9p3t8beBeNIFpGXNIuBRIS10MLuXn">2).Hausdorff Dimension and Fractal Properties of Brownian Path</a></h3>
+     <p> Abstract: Hausdorff dimension is a convenient tool that provides a description of how much
+   space a set occupies in d-dimensional Euclidean space. It is based on Hausdorff measure and has the advantage
+   of being well-defined for every set. In this paper, we give an introduction to Hausdorff
+   dimension and measure, along with multiple useful examples and techniques. In section
+   4, we investigate how Hausdorff dimension can be applied to the study of the fractal
+   properties of Brownian Path. The mass distribution principle, the energy method, and the Frostman’s Lemma
+   are introduced to determine the Hausdorff dimensions of zeros, range, and graph of Brownian path.
+    </p>
+
+
+
+
+<h2> 3D Reconstruction Software</h2>
+  <p>
+    In this project, we implemented 3DKinect, an easy-to-use software
+    that streamlines the seential components in the 3D reconstruction pipeline. Our software has five major functionalities:
+     (a) upload, visualize, capture, and save point cloud data. (b) View recorded RGB-D image and use mouse to rotate and zoom the point cloud data on screen; (c) change the size and color of the
+    points on screen; (d) edit and crop existing point clouds. (e)stitch multiple point cloud data together(using the Iterative Closest Point Algorithm)
+    and demonstrate the process of registration step by step.
+
+  </p>
+  <p>
+   You can also check the <a href="https://drive.google.com/file/d/1tIjJFklwZ_KyMsSbFavCA7u2vSJE56Wy/view?usp=sharing"> poster </a> and a brief
+    <a href="https://drive.google.com/file/d/1IS_OXb7clv2AK74qM2WEbDP4SgexX2h9/view?usp=sharing"> report </a> of our project.
+   </p>
+  <p>
+    The following video is a short demo of 3D registration of a still chair using our 3DKinect software.
+  </p>
+  <iframe src="https://drive.google.com/file/d/1KnZFweZT4mUcrd9IJn-QIPCapK8W1cCc/preview" width="640" height="480"></iframe>
+ <br>
 <h2>Expository Writings in Mathematics</h2>
-  
+
 <h3> <a href="https://drive.google.com/open?id=17pjkWAlPFEv1R1vsN1Ja55ny77ZTIhVl">1).The Chevalley-Warning Theorem: Its Proofs, Generalisations, and Applications</a></h3>
-  
+
   <p> Abstract: The Chevalley-Warning Theorem states that if we are given a common zero of a
 system of polynomials with n variables over a finite field, and the sum of the degrees of
 each polynomial is smaller than n, the number of common zeros of these polynomials
@@ -94,20 +131,10 @@ to Chevalley-Warning Theorem and walk through different proofs of the theorem. W
 also discuss how mathematicians have generalized this theorem and produced more
 powerful results recently. This paper analyzes the proofs of four distinct generalizations of
 Chevalley-type theorems. We give a collection of applications of Chevalley-
-Warning Theorem to different fields of mathematics, such as combinatorics, group theory, graph theory, and affine geometry . 
+Warning Theorem to different fields of mathematics, such as combinatorics, group theory, graph theory, and affine geometry .
  </p>
 
-<h3> <a href="https://drive.google.com/open?id=18Kv9p3t8beBeNIFpGXNIuBRIS10MLuXn">2).Hausdorff Dimension and Fractal Properties of Brownian Path</a></h3>
-  <p> Abstract: Hausdorff dimension is a convenient tool that provides a description of how much
-space a set occupies in d-dimensional Euclidean space. It is based on Hausdorff measure and has the advantage
-of being well-defined for every set. In this paper, we give an introduction to Hausdorff
-dimension and measure, along with multiple useful examples and techniques. In section
-4, we investigate how Hausdorff dimension can be applied to the study of the fractal
-properties of Brownian Path. The mass distribution principle, the energy method, and the Frostman’s Lemma
-are introduced to determine the Hausdorff dimensions of zeros, range, and graph of Brownian path.
- </p>
-  
-  
+
 
 </body>
 </html>
