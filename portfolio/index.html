@@ -35,10 +35,10 @@
 
 <h1>RESEARCH INTERESTS</h1>
 
-<p> My research interests include machine learning, optimization techniques, and high-dimensional statistics. In particular, I am interested in applying novel statistical methods to tackle real-world problems such as astronomy, operation research, and social sciences.
+<p>
+ I am interested in applying novel statistical methods to tackle real-world problems such as astronomy, operation research, and social sciences. My research interests include statistical computing, machine learning, optimization techniques, and high-dimensional statistics.
 </p>
 
-<br>
 <br>
 
 <h2>Astrostatistics</h2>
@@ -48,7 +48,7 @@
   The AFS and the ALSFS algorithms can be used to flatten the spectrum continuum, an important data analysis step in spectroscopic analysis.
  </p>
  <p>
-  Both algorithms start by approximating the shape of a spectrum by using a generalization of convex hull called alpha shape. Then they apply
+  Both algorithms start by approximating the shape of a spectrum using a generalization of convex hull called alpha shape. Then they apply
   local polynomial regresssion to estimate the corresponding blaze function. The key difference between these two algorithms is that AFS
   does not require a lab source spectrum, whereas ALSFS is preferred when such a reference is available. You can check out a working demo
   of these two algorithms <a href="https://github.com/JiguangLi/Blaze_Function/blob/master/demo.pdf">here </a>.
@@ -80,12 +80,17 @@ of these two statistical metrics look alike by the following histograms.
 
 
   <h2>Expository Writings in Probablity/Statistics</h2>
-  <h3> <a href="https://github.com/JiguangLi/Blaze_Function">1) Optimal Transport </a></h3>
+  <h3> <a href="https://drive.google.com/file/d/1OOzX-SdrolrFNSC6Xei71fm8YDmnv1_m/view?usp=sharing">1) Robust Estimation of Wasserstein Distance via Factored Couplings </a></h3>
     <p>
-    yeah
+  The goal of this project is to provide a detailed exposition of a recent <a href="http://proceedings.mlr.press/v89/forrow19a/forrow19a.pdf">paper </a> on statisti-
+  cal optimal transport , in which the authors purpose a robust estimator to approximate
+  Wasserstein distance between two probability distributions under high-dimensional sampling
+  noise.
    </p>
    <p>
-    yeah
+  One challenging problem in optimal transport is to estimate the Wasserstein distances between two probability distributions, which can suffer greatly from the curse of dimensionality and sampling noise
+  when adopting a naive plugin method. One interesting point about this paper is that instead of
+  adding an entropic penalty to alleviate measurement noise, the authors impose an intuitive structural assumptions on possible couplings, which yield a more robust estimator of 2−Wasserstein distance.
    </p>
 
    <h3> <a href="https://drive.google.com/open?id=18Kv9p3t8beBeNIFpGXNIuBRIS10MLuXn">2).Hausdorff Dimension and Fractal Properties of Brownian Path</a></h3>
@@ -101,25 +106,17 @@ of these two statistical metrics look alike by the following histograms.
 
 
 
-<h2> 3D Reconstruction Software</h2>
-  <p>
-    In this project, we implemented 3DKinect, an easy-to-use software
-    that streamlines the seential components in the 3D reconstruction pipeline. Our software has five major functionalities:
-     (a) upload, visualize, capture, and save point cloud data. (b) View recorded RGB-D image and use mouse to rotate and zoom the point cloud data on screen; (c) change the size and color of the
-    points on screen; (d) edit and crop existing point clouds. (e)stitch multiple point cloud data together(using the Iterative Closest Point Algorithm)
-    and demonstrate the process of registration step by step.
 
-  </p>
-  <p>
-   You can also check the <a href="https://drive.google.com/file/d/1tIjJFklwZ_KyMsSbFavCA7u2vSJE56Wy/view?usp=sharing"> poster </a> and a brief
-    <a href="https://drive.google.com/file/d/1IS_OXb7clv2AK74qM2WEbDP4SgexX2h9/view?usp=sharing"> report </a> of our project.
-   </p>
-  <p>
-    The following video is a short demo of 3D registration of a still chair using our 3DKinect software.
-  </p>
-  <iframe src="https://drive.google.com/file/d/1KnZFweZT4mUcrd9IJn-QIPCapK8W1cCc/preview" width="640" height="480"></iframe>
- <br>
-<h2>Expository Writings in Mathematics</h2>
+    <h2> <a href="https://drive.google.com/file/d/1qoNci86LfVH5hYBLwcNyNH8ewJEWJISf/view?usp=sharing"> Convex Optimization on Fastest Mixing Markov Chain </a></h3>
+      <p> In this optimization class project, I explored the problem of finding the transition probabilities on the edges of
+a graph that gives the fastest mixing Markov chain as proposed by <a href="https://web.stanford.edu/~boyd/papers/pdf/fmmc.pdf"> Stephen Boyd, Persi Diaconis, and Lin Xiao </a>.
+The other novel part of this project was that I used weak duality to deduce the optimal transition probability matrix P* for star graphs analytically (See Conjecture 5.2). My proof of this conjecture was
+inspired by <a href="https://web.stanford.edu/~boyd/papers/pdf/fmmc_path.pdf"> the proof a similar result for line graph.  </a>
+
+</p>
+
+
+<h2>Undergrad Theses in Math and Computer Science </h2>
 
 <h3> <a href="https://drive.google.com/open?id=17pjkWAlPFEv1R1vsN1Ja55ny77ZTIhVl">1).The Chevalley-Warning Theorem: Its Proofs, Generalisations, and Applications</a></h3>
 
@@ -134,6 +131,25 @@ Chevalley-type theorems. We give a collection of applications of Chevalley-
 Warning Theorem to different fields of mathematics, such as combinatorics, group theory, graph theory, and affine geometry .
  </p>
 
+
+<h3>2.) 3D Reconstruction Software</h3>
+   <p>
+     In this project, we implemented 3DKinect, an easy-to-use software
+     that streamlines the seential components in the 3D reconstruction pipeline. Our software has five major functionalities:
+      (a) upload, visualize, capture, and save point cloud data. (b) View recorded RGB-D image and use mouse to rotate and zoom the point cloud data on screen; (c) change the size and color of the
+     points on screen; (d) edit and crop existing point clouds. (e)stitch multiple point cloud data together(using the Iterative Closest Point Algorithm)
+     and demonstrate the process of registration step by step.
+
+   </p>
+   <p>
+    You can also check the <a href="https://drive.google.com/file/d/1tIjJFklwZ_KyMsSbFavCA7u2vSJE56Wy/view?usp=sharing"> poster </a> and a brief
+     <a href="https://drive.google.com/file/d/1IS_OXb7clv2AK74qM2WEbDP4SgexX2h9/view?usp=sharing"> report </a> of our project.
+    </p>
+   <p>
+     The following video is a short demo of 3D registration of a still chair using our 3DKinect software.
+   </p>
+   <iframe src="https://drive.google.com/file/d/1KnZFweZT4mUcrd9IJn-QIPCapK8W1cCc/preview" width="640" height="480"></iframe>
+  <br>
 
 
 </body>
