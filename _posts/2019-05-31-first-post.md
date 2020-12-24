@@ -17,18 +17,14 @@
 </ul>
     </nav>
 <div class="container">
-<h1> May 31, 2019: My First Blog Page</h1>
+<h1> Dec 23rd, 2020: My Second First Blog Page</h1>
 
 
 <div class="post">
-<p>Welcome to my first blog page! 🎉 -built in Washington D.C. </p>
+<p>Welcome to my first blog page! 🎉 -built in Washington D.C. in Jun 2019 </p>
 
-<p>I created this blog to encourage myself to write and think more of mathematics, statistics, computer science, and every possible non-academic fun stuff. </p>
+<p>I initially created this page just to show off to my parents that I could build a personal website without any help (apart from Stackoverflow). I also wanted to encourage myself to write and think more of math and stats (or anything really), which of course has turned out to be a complete failure as of today (Dec 23rd, 2020). </p>
 
-
-<p>欢迎来到我的第一个博客首页! 🎉 - 建于DC </p>
-
-<p>我会在这个平台上记录我对数学，统计，计算机，与生活的一些想法。</p>
 
 
 </div>
