@@ -23,7 +23,7 @@
 <div class="post">
 <p>Welcome to my second first blog page! 🎉 - built in Washington D.C. in Jun 2019. </p>
 
-<p>I initially created this page just to show off to my parents that I could build a personal website without any help (excluding StackOverflow). I also wanted to encourage myself to write and think more of math and stats (or anything really), which of course has turned out to be a complete failure. As 2020 is a [horrible show](https://www.youtube.com/watch?v=0TNSfe4OWzk), I don't want to blame myself too much. My new year resolution is to write and articulate more. Meanwhile, please refrain from contacting me if I still do not deliver in 2021.  </p>
+<p>I initially created this page just to show off to my parents that I could build a personal website without any help (excluding StackOverflow). I also wanted to encourage myself to write and think more of math and stats (or anything really), which of course has turned out to be a complete failure. 2020 is certainly a <a href="https://www.youtube.com/watch?v=0TNSfe4OWzk"> horrible show </a>, so I don't want to blame myself too much. My new year resolution is to write and articulate more. Meanwhile, please refrain from contacting me if I still do not deliver in 2021.  </p>
 
 
 
