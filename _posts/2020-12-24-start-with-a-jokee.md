@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html>
 <head><meta charset="utf-8" />
 
@@ -9129,15 +9128,15 @@ label {
 }
 /* Flexible box model classes */
 /* Taken from Alex Russell http://infrequently.org/2009/08/css-3-progress/ */
-/* This file is a compatability layer.  It allows the usage of flexible box 
+/* This file is a compatability layer.  It allows the usage of flexible box
 model layouts accross multiple browsers, including older browsers.  The newest,
 universal implementation of the flexible box model is used when available (see
-`Modern browsers` comments below).  Browsers that are known to implement this 
+`Modern browsers` comments below).  Browsers that are known to implement this
 new spec completely include:
 
     Firefox 28.0+
     Chrome 29.0+
-    Internet Explorer 11+ 
+    Internet Explorer 11+
     Opera 17.0+
 
 Browsers not listed, including Safari, are supported via the styling under the
@@ -12519,7 +12518,7 @@ div#pager .ui-resizable-handle {
   background: #f7f7f7;
   border-top: 1px solid #cfcfcf;
   border-bottom: 1px solid #cfcfcf;
-  /* This injects handle bars (a short, wide = symbol) for 
+  /* This injects handle bars (a short, wide = symbol) for
         the resize handle. */
 }
 div#pager .ui-resizable-handle::after {
@@ -13029,18 +13028,20 @@ body {
 div#notebook {
   overflow: visible;
   border-top: none;
+}div#notebook-container{
+  padding: 6ex 12ex 8ex 12ex;
 }@media print {
   div.cell {
     display: block;
     page-break-inside: avoid;
-  } 
-  div.output_wrapper { 
-    display: block;
-    page-break-inside: avoid; 
   }
-  div.output { 
+  div.output_wrapper {
     display: block;
-    page-break-inside: avoid; 
+    page-break-inside: avoid;
+  }
+  div.output {
+    display: block;
+    page-break-inside: avoid;
   }
 }
 </style>
@@ -13074,10 +13075,15 @@ div#notebook {
   <div tabindex="-1" id="notebook" class="border-box-sizing">
     <div class="container" id="notebook-container">
 
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Henry-and-Henry's-Research">Henry and Henry's Research<a class="anchor-link" href="#Henry-and-Henry's-Research">&#182;</a></h2><h3 id="Suppose-Henry's-boss-wants-Henry-to-predict-next-year-revenue.-Henry-decided-to-make-a-regression-model-to-impress-his-boss.-Henry-decided-to-plot-the-year-revenue-curve-and-fit-a-regression-line.">Suppose Henry's boss wants Henry to predict next year revenue. Henry decided to make a regression model to impress his boss. Henry decided to plot the year-revenue curve and fit a regression line.<a class="anchor-link" href="#Suppose-Henry's-boss-wants-Henry-to-predict-next-year-revenue.-Henry-decided-to-make-a-regression-model-to-impress-his-boss.-Henry-decided-to-plot-the-year-revenue-curve-and-fit-a-regression-line.">&#182;</a></h3><p>Henry spent the morning finding this <a href="https://www.macrotrends.net/stocks/charts/SCGLY/societe-generale-group/revenue">extremely reliable source</a>: the revenues between 2010 and 2019 were: 79619, 29458, 29920, 30530, 31603, 28726, 28138, 27179, 29833, 27487 millions.</p>
+<h1 id="Dec-23rd,-2020:--Start-with-a-Joke">Dec 23rd, 2020:  Start with a Joke<a class="anchor-link" href="#Dec-23rd,-2020:--Start-with-a-Joke">&#182;</a></h1><p>It's a common strategy to start something new with a joke. Nevertheless, explaining the joke itself is often frowned upon on. I hereby claim the latter statement is simply not true. Hence the goal of this post is two-fold: 1) to get me started with the habit of writing by writing a joke ; 2) to spend serious amount of time explaining a joke and still make it funny.</p>
+<h2 id="Motivation">Motivation<a class="anchor-link" href="#Motivation">&#182;</a></h2><p>My colleague once mentioned to us his favorite statistics question on StackExchange is the following:</p>
+<blockquote><p><strong>Suppose we have data set (𝑋𝑖,𝑌𝑖) with 𝑛 points. We want to perform a linear regression, but first we sort the 𝑋𝑖 values and the 𝑌𝑖 values independently of each other, forming data set (𝑋𝑖,𝑌𝑗). Is there any meaningful interpretation of the regression on the new data set? Does this have a name?</strong></p>
+</blockquote>
+<p>If you know anything about statistics, I strongly encourge you to visit the website <a href="https://stats.stackexchange.com/questions/185507/what-happens-if-the-explanatory-and-response-variables-are-sorted-independently">here</a> to read about people's comments and responses - it will make you smile.</p>
+<p>If you don't know how statistics works as my friend Henry, that's okay too. As I mentioned at the very beginning, the goal of this post is to explain the joke and make it funny. Please keep reading. Below is a customized expository writing I sent to Henry couple of days ago, who managed to understand the joke immediately after reading it. Please let me know if there is still anything unclear!</p>
+<h3 id="True-Story:--Henry-and-Henry's-Research">True Story:  Henry and Henry's Research<a class="anchor-link" href="#True-Story:--Henry-and-Henry's-Research">&#182;</a></h3><h4 id="Setting:-suppose-Henry's-boss-wants-Henry-to-predict-next-year-revenue.-Henry-decided-to-make-a-regression-model-to-impress-his-boss.-Specifically,-he-decided-to-plot-the-year-revenue-curve-and-fit-a-regression-line.">Setting: suppose Henry's boss wants Henry to predict next year revenue. Henry decided to make a regression model to impress his boss. Specifically, he decided to plot the year-revenue curve and fit a regression line.<a class="anchor-link" href="#Setting:-suppose-Henry's-boss-wants-Henry-to-predict-next-year-revenue.-Henry-decided-to-make-a-regression-model-to-impress-his-boss.-Specifically,-he-decided-to-plot-the-year-revenue-curve-and-fit-a-regression-line.">&#182;</a></h4><p>Henry spent the morning finding this <a href="https://www.macrotrends.net/stocks/charts/SCGLY/societe-generale-group/revenue">extremely reliable source</a>: the revenues between 2010 and 2019 were: 79619, 29458, 29920, 30530, 31603, 28726, 28138, 27179, 29833, 27487 millions.</p>
 <p>Henry was excited but he forgot how to do regression, so he asked his intern (from Emory University?) to do this instead. Here is the plot his intern presented to him:</p>
 
 </div>
@@ -13091,7 +13097,7 @@ div#notebook {
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Coefficients: 
+<pre>Coefficients:
  [[-3119.60606061]]
 r-square: [0.67403379]
 </pre>
@@ -13114,10 +13120,9 @@ r-square: [0.67403379]
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Henry was happy. When the intern asked him how to improve the plot, Henry replied for two words: "<strong>Bigger Plot</strong>" . The intern looks concerned but went ahead to make this:</p>
+<p>Henry was happy. When the intern asked him how the plot could be improved, Henry replied with only two words: "<strong>Bigger Plot</strong>" . The intern looks concerned but went ahead to make this:</p>
 
 </div>
 </div>
@@ -13130,7 +13135,7 @@ r-square: [0.67403379]
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Coefficients: 
+<pre>Coefficients:
  [[-3119.60606061]]
 intercept: [50593.33333333]
 r-square: [0.67403379]
@@ -13154,40 +13159,35 @@ r-square: [0.67403379]
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Henry was excited, not only because of the larger plot which can impress his manager, but because he could now apply his solid quantitative skills developped from Midd to predict 2020 revenue. Based on the coefficient, Henry did this:</p>
+<p>Henry was excited, not only because of the larger plot which can impress his manager, but because he could now apply his solid quantitative skills developped from Middlebury Econ Department to predict 2020 revenue. Based on the coefficient, Henry did this:</p>
 <p><strong>y_2020= -3119*2020+50593= 19403 millions dollars</strong></p>
 
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Henry felt crestfallen: "bellow 20000 Millions!!! my boat, my bonus, my new Tesla model XXX! No I wouldn't show this to my manager". Henry never gave up; he thought the intern must have done something fundamentally stupid. And the plot looked urgly anyway, because there was no clear trend of going up or going down. Not good!</p>
+<p>Henry felt crestfallen: "bellow 20000 Millions!!! My boat, my bonus, my new Tesla model XXX! No I wouldn't show this to my manager". Henry never gave up; he thought the intern must have done something fundamentally stupid. And the plot looked urgly anyway, because there was no clear trend of going up or going down. Not good!</p>
 
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Suddenly, there was a violent lightening strike in his office and a light bulb appeared in Henry's head. The Intern later claimed he did see the actual light bulb in Henry's head himself, as if seeing the face of god. It still remained unclear whether that was a mystical experiences for both Henry and his intern (and this is still under dabate by many famous theologists), but Henry's ideas had fundamentally revolutionalized the sciences forever:</p>
+<p>Suddenly, there was a violent lightening strike in his office and a light bulb appeared in Henry's head. The Intern later claimed he did see the actual light bulb in Henry's head himself, as if seeing the face of god. It still remains unclear whether that was a mystical experience for both Henry and his intern (and this is still under dabate by many famous theologists), but Henry's ideas had fundamentally revolutionalized the sciences forever:</p>
 
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h1 id="Henry's-BIG-idea:-what-if-we-sort-the-year-and-revenus-independently-and-in-increasing-order?-Will-we-have-a-better-2020-revenue?-Will-my-boss-love-me-again-because-of-this?">Henry's BIG idea: what if we sort the year and revenus independently and in increasing order? Will we have a better 2020 revenue? Will my boss love me again because of this?<a class="anchor-link" href="#Henry's-BIG-idea:-what-if-we-sort-the-year-and-revenus-independently-and-in-increasing-order?-Will-we-have-a-better-2020-revenue?-Will-my-boss-love-me-again-because-of-this?">&#182;</a></h1>
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Henry asked his intern to make another plot based on his new idea, though the intern looked very suspicious of Henry's new idea. But as always, the Emory intern had to listen to his boss. Here is the new plot the intern generated for Henry:</p>
 
@@ -13202,7 +13202,7 @@ r-square: [0.67403379]
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Coefficients: 
+<pre>Coefficients:
  [[3431.58181818]]
 intercept: [14811.8]
 r-square: [0.59639035]
@@ -13226,8 +13226,7 @@ r-square: [0.59639035]
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Henry was in ecstacy, not only because now there was a clear increasing trend in the plot, but because he could now apply his math skills developped from Midd again to predict 2020 revenue. Based on the coefficient, Henry did this:</p>
 <p><strong>y_2020= 3431*2020+14811= 6945431 millions dollars !!!!!!!!!!!!</strong></p>
@@ -13235,10 +13234,10 @@ r-square: [0.59639035]
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h4 id="Sometimes-just-a-small-modifications-of-conventional-ideas-could-lead-to-BIG-advance-in-sciences.--Henry-reported-his-predictions-to-his-boss,-and-everyone-was-super-excited.-The-very-next-day,-the-Nobel-committe-called,-and-Henry-was-awarded-a-Nobel-prize-in-Economics-due-to-his-special-contribution-to-coporate-finance.-Nowadays,-Henry's-sorting-method-is-known-as-&quot;stochastic-monte-Carlo-mystical-reordering-method&quot;,-which-has-been-widely-adopted-in-both-academia-and-industry.-He-later-accepted-a-Tenure-position-at-UChicago-and-became-so-rich-that-he-bought-best-friend-a-new-house-in-Hyde-Park,-Chicago,-IL.">Sometimes just a small modifications of conventional ideas could lead to BIG advance in sciences.  Henry reported his predictions to his boss, and everyone was super excited. The very next day, the Nobel committe called, and Henry was awarded a Nobel prize in Economics due to his special contribution to coporate finance. Nowadays, Henry's sorting method is known as "stochastic monte Carlo mystical reordering method", which has been widely adopted in both academia and industry. He later accepted a Tenure position at UChicago and became so rich that he bought best friend a new house in Hyde Park, Chicago, IL.<a class="anchor-link" href="#Sometimes-just-a-small-modifications-of-conventional-ideas-could-lead-to-BIG-advance-in-sciences.--Henry-reported-his-predictions-to-his-boss,-and-everyone-was-super-excited.-The-very-next-day,-the-Nobel-committe-called,-and-Henry-was-awarded-a-Nobel-prize-in-Economics-due-to-his-special-contribution-to-coporate-finance.-Nowadays,-Henry's-sorting-method-is-known-as-&quot;stochastic-monte-Carlo-mystical-reordering-method&quot;,-which-has-been-widely-adopted-in-both-academia-and-industry.-He-later-accepted-a-Tenure-position-at-UChicago-and-became-so-rich-that-he-bought-best-friend-a-new-house-in-Hyde-Park,-Chicago,-IL.">&#182;</a></h4>
+<p>Sometimes just a small modifications of conventional ideas could lead to BIG advance in sciences.  Henry reported his predictions to his boss, and everyone was super excited. The very next day, the Nobel committe called, and Henry was awarded a Nobel prize in Economics due to his special contribution to corporate finance. Nowadays, Henry's sorting method is known as "stochastic monte Carlo mystical reordering method", which has been widely adopted in both academia and industry. He later accepted a Tenure position at UChicago and became so rich that he bought his best friend a new house in Hyde Park, Chicago, IL.</p>
+
 </div>
 </div>
 </div>
@@ -13246,7 +13245,7 @@ r-square: [0.59639035]
   </div>
 </body>
 
- 
+
 
 
 </html>
