@@ -13335,10 +13335,3 @@ Observe for any $\epsilon \in (0,1)$, if we let $m$ sufficiently large, the prob
 <li>there are constants $c_1, c_2 &gt;0$ such that $$\mathbb P [|X| \geq t] \leq c_1 e^{-c_2 t} \hspace{0.5cm} \text{for all $t&gt;0$}$$</li>
 <li>the quantuty $\sum_{k \geq 2} [\frac{\mathbb E [x^{k}]}{k!}]^{\frac{1}{k}}$ is finite.</li>
 </ul>
-
-</body>
-
- 
-
-
-</html>
