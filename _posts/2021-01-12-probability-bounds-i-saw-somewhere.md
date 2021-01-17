@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html>
 <head><meta charset="utf-8" />
 
@@ -13337,24 +13336,6 @@ Observe for any $\epsilon \in (0,1)$, if we let $m$ sufficiently large, the prob
 <li>the quantuty $\sum_{k \geq 2} [\frac{\mathbb E [x^{k}]}{k!}]^{\frac{1}{k}}$ is finite.</li>
 </ul>
 
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span> 
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-</div>
-    </div>
-  </div>
 </body>
 
  
