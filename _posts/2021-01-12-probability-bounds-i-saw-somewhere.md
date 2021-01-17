@@ -13333,5 +13333,5 @@ Observe for any $\epsilon \in (0,1)$, if we let $m$ sufficiently large, the prob
 <ul>
 <li>there is a positive number $c_0 &gt;0$ such that $\mathbb E [e^{\lambda X}] &lt; \infty$ for all $|\lambda| \leq c_0$</li>
 <li>there are constants $c_1, c_2 &gt;0$ such that $$\mathbb P [|X| \geq t] \leq c_1 e^{-c_2 t} \hspace{0.5cm} \text{for all $t&gt;0$}$$</li>
-<li>the quantuty $\sum_{k \geq 2} [\frac{\mathbb E [x^{k}]}{k!}]^{\frac{1}{k}}$ is finite.</li>
+<li>the quantity $\sum_{k \geq 2} [\frac{\mathbb E [x^{k}]}{k!}]^{\frac{1}{k}}$ is finite.</li>
 </ul>
