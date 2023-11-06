@@ -64,3 +64,7 @@ float: left;
  margin: 0 15px 0 0;
 }
 
+ul.portfolio li {
+      font-size: 18px; /* Change this value to set the desired font size for the list items */
+    }
+
