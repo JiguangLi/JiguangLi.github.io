@@ -28,20 +28,22 @@
 <nav>
 <ul>
 <li><a href="/">Home</a></li>
-<li><a href="/portfolio">Research Projects</a></li>
+<li><a href="/portfolio">Research</a></li>
 <li><a href="/cv">CV</a></li>
+    <li><a href="/entropy">Random</a></li>
 </ul>
  </nav>
 
-<h1>RESEARCH INTERESTS</h1>
+<h1>Publications</h1>
+    <ul>
+        <li>Li, J., Gibbons, R. and Rockova V, 2023. <a href="https://arxiv.org/pdf/2310.17820.pdf">Sparse Bayesian Multidimensional Item Response Theory (submitted)</a></li>
+    </ul>
+
+
+<h1>Past Projects</h1>
 
 <p>
-I am interested in developing novel statistical methods and computational tools for important public policy and social science problems. My main research interests include Bayesian statistics, graphical models, and machine learning.
-</p>
-
-<p>
-<a href="#astro">Astrostatistics</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#bmirt">Bayesian Item Response Theory</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    <a href="#ml">Machine Learning</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#optim">Optimization</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#thesis">Undergrad Theses</a>
+<a href="#astro">Astrostatistics</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#expo">Expository Writings</a>&nbsp;     <a href="#ml">Machine Learning</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#thesis">Undergrad Thesis</a>
 </p>
 
 <br>
@@ -58,16 +60,11 @@ I am interested in developing novel statistical methods and computational tools 
   of these two algorithms <a href="https://github.com/JiguangLi/Blaze_Function/blob/master/demo.pdf">here </a>.
  </p>
 
- <h3> <a href="https://drive.google.com/open?id=1s9yV_41rw2_1R8lJbcArTS0LL0kR1LJc"> 2).Quasar variability </a></h3>
-<p> Quasars are highly variable astronomical sources and there are many statistical metrics(variability indices) that quantify how variable quasars are.
-In this project, we studied the imaging data of more than 330,000 quasars from the Catalina Sky Survey (CSS), which provided magnitude information
-repeatedly over 8 years. The primary goal of this research is to determine whether there is a significant difference in the statistical distributions of variability indices between radio-loud and
-radio-quiet quasars.
-</p>
- <p> We computed eleven different variability indices to compare the difference in variability between radio-quiet and radio-
+ <h3>  2).Quasar variability </a></h3>
+<p> Quasars are highly variable astronomical sources and there are many statistical metrics(variability indices) that quantify how variable quasars are. We computed eleven different variability indices to compare the difference in variability between radio-quiet and radio-
 loud quasars. While most of the variability indices of these two populations are distributed in a similar manner, the results of Two-sample Kolmogorov-Smirnov test and Anderson-Darling test
 both suggest that Robust median statistics and SB variability metrics could both reject the null hypothesis (same population) at less than 1% level, even though the statistical distributions
-of these two statistical metrics look alike by the following histograms.
+of these two statistical metrics look alike by the following histograms. This result may point to physical differences in accretion behavior between these two populations of quasars.
  </p>
 
   <div class="row">
@@ -78,30 +75,12 @@ of these two statistical metrics look alike by the following histograms.
     <img src="sb_index.png" alt="SB Index" style="width:100%">
   </div>
 </div>
-
-<p>This result may point to physical differences in accretion behavior between these two populations of quasars. </p>
   <br>
 
 
-<h2 id="bmirt"> Bayesian Item Response Modeling</h3>
-    <p>
-        Education policy researchers tend to use value-added (the growth of students' average test scores) models to evaluate teachers impact, but the usage of average score ignores
-the rich information contained in students item-by-item response data. In this project,
-we implemented multiple customized Multidimensional Item Response Theory (MIRT)
-models that simulate students item-level data generating process and provide multi-
-dimensional measures of students latent abilities. We observed these MIRT models
-demonstrate greater prediction power in predicting students' future test performance
-than using students' average scores: given students current item response, students
-rankings produced by our customized MIRT models have significantly higher rank-order correlation with students future test performance than the one ranked by students
-average scores. This implies there exists valuable additional information contained in
-students item response data, which value-added models may have long overlooked.
-    </p>
 
-    <p>
-    The slides of my recent talk can be found <a href="https://jiguangli.github.io/blog/2021/12/19/Bayesian-Item-Response-Theory"> here </a>.
-    </p>
 
-<h2 id="ml"> Deep Learning and Medical Imaging </h3>
+<h2 id="ml"> Deep Learning and Medical Imaging </h2>
     <p>
     My recent medical imaging project involves building deep learning models to predict abnormality from patients' x-ray images. I implemented multiple customized Densenet and Resnet models and applied ensemble learning methods to
         improve prediction  power. I tested our ensemble models on the <a href="https://stanfordmlgroup.github.io/competitions/mura/"> Stanford MURA Dataset </a>, and achieved 0.92 AUC and 0.75 Kappa in the test set. Our model demonstrated better prediction power
@@ -112,14 +91,6 @@ students item response data, which value-added models may have long overlooked.
          Currently, we are working on training GAN models to perform image morphing in order to investigate the common characteristics of abnormal x-ray images.
     </p>
 
-  <h2 id="optim"> Convex Optimization on Fastest Mixing Markov Chain</h3>
-    <p> In this <a href="https://drive.google.com/file/d/1qoNci86LfVH5hYBLwcNyNH8ewJEWJISf/view?usp=sharing"> optimization project</a>, I explored the problem of finding the transition probabilities on the edges of
-  a graph that gives the fastest mixing Markov chain as proposed by <a href="https://web.stanford.edu/~boyd/papers/pdf/fmmc.pdf"> Stephen Boyd, Persi Diaconis, and Lin Xiao </a>.
-  The novel part of this project is that I used weak duality to deduce the optimal transition probability matrix P* for star graphs analytically (See Conjecture 5.2 of my project paper). My proof of this conjecture was
-  inspired by <a href="https://web.stanford.edu/~boyd/papers/pdf/fmmc_path.pdf"> the proof a similar result for line graph </a>. In addition, I present
-  a detailed derivation of the dual problem of semidefinite program (see theorem 4.1), which the original authors have omitted.
-
-  </p>
 
 
   <h2 id="expo"> Expository Writings in Probablity/Statistics</h2>
@@ -144,6 +115,15 @@ students item response data, which value-added models may have long overlooked.
    properties of Brownian Path. The mass distribution principle, the energy method, and the Frostman’s Lemma
    are introduced to determine the Hausdorff dimensions of zeros, range, and graph of Brownian path.
     </p>
+
+   <h3 > <a href="https://drive.google.com/file/d/1qoNci86LfVH5hYBLwcNyNH8ewJEWJISf/view?usp=sharing">3).Convex Optimization on Fastest Mixing Markov Chain</a></h3>
+    <p>  I explored the problem of finding the transition probabilities on the edges of
+  a graph that gives the fastest mixing Markov chain as proposed in  <a href="https://web.stanford.edu/~boyd/papers/pdf/fmmc.pdf"> Stephen Boyd, Persi Diaconis, and Lin Xiao </a>.
+  The novel part of this project is that I used weak duality to deduce the optimal transition probability matrix P* for star graphs analytically (See Conjecture 5.2 of my project paper). My proof of this conjecture was
+  inspired by <a href="https://web.stanford.edu/~boyd/papers/pdf/fmmc_path.pdf"> the proof a similar result for line graph </a>. In addition, I present
+  a detailed derivation of the dual problem of semidefinite program (see theorem 4.1), which the original authors have omitted.
+
+  </p>
 
 
 <h2 id="thesis">Undergrad Theses in Math and Computer Science </h2>
