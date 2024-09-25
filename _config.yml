@@ -1,3 +1,5 @@
 name: Jiguang Li
 markdown: kramdown
+kramdown:
+  parse_block_html: true
 permalink: /blog/:year/:month/:day/:title
