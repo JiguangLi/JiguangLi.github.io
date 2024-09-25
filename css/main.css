@@ -63,6 +63,11 @@ ul.posts li {
 float: left;    
  margin: 0 15px 0 0;
 }
+blockquote {
+    font-style: italic;
+    border-left: 3px solid #ccc;
+    padding-left: 10px;
+}
 
 
 
