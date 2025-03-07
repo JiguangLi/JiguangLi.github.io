@@ -1,172 +1,132 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-<title>Project Page</title>
-<link rel="stylesheet" type="text/css" href="/css/main.css">
-<style>
-* {
-  box-sizing: border-box;
-}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Research Projects</title>
+    <link rel="stylesheet" type="text/css" href="/css/main.css">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
 
-.column {
-  float: left;
-  width: 33.33%;
-  padding: 5px;
-}
+        .column {
+            float: left;
+            width: 33.33%;
+            padding: 5px;
+        }
 
-/* Clearfix (clear floats) */
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
-}
+        /* Clearfix (clear floats) */
+        .row::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
 
-ul {
-      font-size: 18px; /* Change this value to set the desired font size for the bullet points */
-   }
-   li {
-       font-size: 21px; /* Change this value to set the desired font size for the list items */
-   }
-</style>
+        ul {
+            font-size: 18px;
+        }
+
+        li {
+            font-size: 21px;
+            margin-bottom: 10px; /* Adds spacing between list items */
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            font-weight: bold;
+        }
+    </style>
 </head>
+
 <body>
 
-<nav>
-<ul>
-<li><a href="/">Home</a></li>
-<li><a href="/portfolio">Research</a></li>
-<li><a href="/cv">CV</a></li>
-    <li><a href="/entropy">Random</a></li>
-</ul>
- </nav>
+    <nav>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/portfolio">Research</a></li>
+            <li><a href="/cv">CV</a></li>
+            <li><a href="/entropy">Random</a></li>
+        </ul>
+    </nav>
 
-<h1>Publications</h1>
+    <h1>Publications</h1>
     <ul>
-        <li>Li, J., Gibbons, R. and Rockova V, 2023. <a href="https://arxiv.org/pdf/2310.17820.pdf">Sparse Bayesian Multidimensional Item Response Theory (submitted).</a></li>
+        <li>
+            <strong>Jiguang Li</strong>, Robert Gibbons, and Veronika Ročková.
+            "Sparse Bayesian Multidimensional Item Response Theory."
+            <em>Journal of the American Statistical Association</em>, 2025 (in press).
+            [<a href="https://arxiv.org/abs/2310.17820" target="_blank">Paper</a>]
+            [<a href="https://github.com/JiguangLi/sparse_bayesian_mirt" target="_blank">Code</a>]
+        </li>
+        <li>
+            <strong>Jiguang Li</strong>, Robert Gibbons, and Veronika Ročková.
+            "Deep Computerized Adaptive Testing." Submitted, 2025.
+            [<a href="https://arxiv.org/pdf/2502.19275" target="_blank">Paper</a>]
+            [<a href="https://github.com/JiguangLi/deep_CAT" target="_blank">Code</a>]
+        </li>
     </ul>
 
+    <br>
 
-</br>
+    <h1>Past Projects</h1>
 
+    <ul>
+        <li>
+            <strong>Astrostatistics:</strong> Developed a Python implementation of the Alpha-shape Fitting to Spectrum (AFS) and
+            the Alpha-shape and Lab Source Fitting to Spectrum (ALSFS) algorithms for spectrum continuum flattening,
+            a crucial preprocessing step in spectroscopic analysis.
+            [<a href="https://github.com/JiguangLi/Blaze_Function" target="_blank">Code</a>].
+            Algorithms originally proposed in <a href="https://arxiv.org/pdf/1904.10065.pdf" target="_blank">Xin Xu et al. (2019)</a>.
+        </li>
 
-<h1>Past Projects</h1>
-<p>
-<a href="#astro">Astrostatistics</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp<a href="#expo">Expository Writings</a>&nbsp   <a href="#ml">Machine Learning</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#thesis">Undergrad Thesis</a>
-</p>
+        <li>
+            <strong>Deep Learning for Medical Imaging:</strong> Implemented custom DenseNet and ResNet architectures and
+            applied ensemble learning methods to enhance X-ray fracture prediction.
+            Achieved 0.92 AUC and 0.75 Kappa on the <a href="https://stanfordmlgroup.github.io/competitions/mura/" target="_blank">Stanford MURA dataset</a>,
+            outperforming the baseline model (0.705 Kappa) from the
+            <a href="https://arxiv.org/abs/1712.06957" target="_blank">original 2018 MURA paper</a>.
+            Sample saliency maps available <a href="https://drive.google.com/file/d/1UNjR8zRwOUWt7nerBfddT7LPHhtVBmb2/view?usp=sharing" target="_blank">here</a>.
+        </li>
 
-<h2 id="astro">Astrostatistics</h2>
-<h3> <a href="https://github.com/JiguangLi/Blaze_Function">1).Two Methods to Remove Blaze Function from Echelle Spectrum Orders</a></h3>
-  <p>
-  Python implementation of the Alpha-shape Fitting to Spectrum algorithm (AFS) and the Alpha-shape and Lab Source Fitting to Spectrum algorithm (ALSFS) proposed by Xin Xu et al (2019), whose paper is available <a href="https://arxiv.org/pdf/1904.10065.pdf"> here </a>.
-  The AFS and the ALSFS algorithms can be used to flatten the spectrum continuum, an important data analysis step in spectroscopic analysis.
- </p>
- <p>
-  Both algorithms use alphashape to approximate the shape of a spectrum and estimate its corresponding blaze function using local polynimail regression. The key difference between these two algorithms is that AFS
-  does not require a lab source spectrum, whereas ALSFS is preferred when such a reference is available. You can check out a working demo
-  of these two algorithms <a href="https://github.com/JiguangLi/Blaze_Function/blob/master/demo.pdf">here </a>.
- </p>
+        <li>
+            <strong>Optimal Transport:</strong> Expository writing on robust estimation of Wasserstein distance via factored couplings.
+            [<a href="https://drive.google.com/file/d/1OOzX-SdrolrFNSC6Xei71fm8YDmnv1_m/view?usp=sharing" target="_blank">Paper</a>].
+        </li>
 
- <h3>  2).Quasar variability </a></h3>
-<p> Quasars are highly variable astronomical sources and there are many statistical metrics(variability indices) that quantify how variable quasars are. We computed eleven different variability indices to compare the difference in variability between radio-quiet and radio-
-loud quasars. While most of the variability indices of these two populations are distributed in a similar manner, the results of Two-sample Kolmogorov-Smirnov test and Anderson-Darling test
-both suggest that Robust median statistics and SB variability metrics could both reject the null hypothesis (same population) at less than 1% level, even though the statistical distributions
-of these two statistical metrics look alike by the following histograms. This result may point to physical differences in accretion behavior between these two populations of quasars.
- </p>
+        <li>
+            <strong>Hausdorff Dimension & Brownian Path:</strong> Explored fractal properties of Brownian motion.
+            [<a href="https://drive.google.com/file/d/1OOzX-SdrolrFNSC6Xei71fm8YDmnv1_m/view?usp=sharing" target="_blank">Paper</a>].
+        </li>
 
-  <div class="row">
-  <div class="column">
-    <img src="robust_median.png" alt="Robust Median" style="width:100%">
-  </div>
-  <div class="column">
-    <img src="sb_index.png" alt="SB Index" style="width:100%">
-  </div>
-</div>
-  <br>
+        <li>
+            <strong>Mixing Markov Chains:</strong> Investigated convex optimization methods for the fastest mixing Markov chain.
+            Applied weak duality to derive the optimal transition probability matrix for star graphs.
+            [<a href="https://drive.google.com/file/d/1qoNci86LfVH5hYBLwcNyNH8ewJEWJISf/view?usp=sharing" target="_blank">Paper</a>].
+        </li>
 
+        <li>
+            <strong>Undergraduate Thesis (Algebraic Combinatorics):</strong> The Chevalley-Warning Theorem: Its Proofs,
+            Generalizations, and Applications.
+            [<a href="https://drive.google.com/open?id=17pjkWAlPFEv1R1vsN1Ja55ny77ZTIhVl" target="_blank">Paper</a>].
+        </li>
 
-
-
-<h2 id="ml"> Deep Learning and Medical Imaging </h2>
-    <p>
-    My recent medical imaging project involves building deep learning models to predict abnormality from patients' x-ray images. I implemented multiple customized Densenet and Resnet models and applied ensemble learning methods to
-        improve prediction  power. I tested our ensemble models on the <a href="https://stanfordmlgroup.github.io/competitions/mura/"> Stanford MURA Dataset </a>, and achieved 0.92 AUC and 0.75 Kappa in the test set. Our model demonstrated better prediction power
-        than the baseline model (0.705 kappa) outlined by the <a href="https://arxiv.org/abs/1712.06957"> original 2018 MURA paper </a>.
-    </p>
-    <p>
-     Some sample saliency maps of our current deep learning models can be found <a href="https://drive.google.com/file/d/1UNjR8zRwOUWt7nerBfddT7LPHhtVBmb2/view?usp=sharing"> here </a>.
-         Currently, we are working on training GAN models to perform image morphing in order to investigate the common characteristics of abnormal x-ray images.
-    </p>
-
-
-
-  <h2 id="expo"> Expository Writings in Probablity/Statistics</h2>
-  <h3> <a href="https://drive.google.com/file/d/1OOzX-SdrolrFNSC6Xei71fm8YDmnv1_m/view?usp=sharing">1) Robust Estimation of Wasserstein Distance via Factored Couplings </a></h3>
-    <p>
-  The goal of this project is to provide a detailed exposition of a recent <a href="http://proceedings.mlr.press/v89/forrow19a/forrow19a.pdf">paper </a> on statistical optimal transport , in which the authors purpose a robust estimator to approximate
-  Wasserstein distance between two probability distributions under high-dimensional sampling
-  noise.
-   </p>
-   <p>
-  One challenging problem in optimal transport is to estimate the Wasserstein distances between two probability distributions, which can suffer greatly from the curse of dimensionality and sampling noise
-  when adopting a naive plugin method. One interesting point about this paper is that instead of
-  adding an entropic penalty to alleviate measurement noise, the authors impose an intuitive structural assumptions on possible couplings, which yield a more robust estimator of 2−Wasserstein distance.
-   </p>
-
-   <h3> <a href="https://drive.google.com/open?id=18Kv9p3t8beBeNIFpGXNIuBRIS10MLuXn">2).Hausdorff Dimension and Fractal Properties of Brownian Path</a></h3>
-     <p> Abstract: Hausdorff dimension is a convenient tool that provides a description of how much
-   space a set occupies in d-dimensional Euclidean space. It is based on Hausdorff measure and has the advantage
-   of being well-defined for every set. In this paper, we give an introduction to Hausdorff
-   dimension and measure, along with multiple useful examples and techniques. In section
-   4, we investigate how Hausdorff dimension can be applied to the study of the fractal
-   properties of Brownian Path. The mass distribution principle, the energy method, and the Frostman’s Lemma
-   are introduced to determine the Hausdorff dimensions of zeros, range, and graph of Brownian path.
-    </p>
-
-   <h3 > <a href="https://drive.google.com/file/d/1qoNci86LfVH5hYBLwcNyNH8ewJEWJISf/view?usp=sharing">3).Convex Optimization on Fastest Mixing Markov Chain</a></h3>
-    <p>  I explored the problem of finding the transition probabilities on the edges of
-  a graph that gives the fastest mixing Markov chain as proposed in  <a href="https://web.stanford.edu/~boyd/papers/pdf/fmmc.pdf"> Stephen Boyd, Persi Diaconis, and Lin Xiao </a>.
-  The novel part of this project is that I used weak duality to deduce the optimal transition probability matrix P* for star graphs analytically (See Conjecture 5.2 of my project paper). My proof of this conjecture was
-  inspired by <a href="https://web.stanford.edu/~boyd/papers/pdf/fmmc_path.pdf"> the proof a similar result for line graph </a>. In addition, I present
-  a detailed derivation of the dual problem of semidefinite program (see theorem 4.1), which the original authors have omitted.
-
-  </p>
-
-
-<h2 id="thesis">Undergrad Theses in Math and Computer Science </h2>
-
-<h3> <a href="https://drive.google.com/open?id=17pjkWAlPFEv1R1vsN1Ja55ny77ZTIhVl">1).The Chevalley-Warning Theorem: Its Proofs, Generalisations, and Applications</a></h3>
-
-  <p> Abstract: The Chevalley-Warning Theorem states that if we are given a common zero of a
-system of polynomials with n variables over a finite field, and the sum of the degrees of
-each polynomial is smaller than n, the number of common zeros of these polynomials
-is a multiple of the characteristic of the field. In this paper, we give an introduction
-to Chevalley-Warning Theorem and walk through different proofs of the theorem. We
-also discuss how mathematicians have generalized this theorem and produced more
-powerful results recently. This paper analyzes the proofs of four distinct generalizations of
-Chevalley-type theorems. We give a collection of applications of Chevalley-
-Warning Theorem to different fields of mathematics, such as combinatorics, group theory, graph theory, and affine geometry.
- </p>
-
-
-<h3>2.) <a href="https://drive.google.com/file/d/1IS_OXb7clv2AK74qM2WEbDP4SgexX2h9/view?usp=sharing"> 3D Reconstruction </a> </h3>
-   <p>
-     In this project, we implemented 3DKinect, an easy-to-use software
-     that streamlines the seential components in the 3D reconstruction pipeline. Our software has five major functionalities:
-      (a) upload, visualize, capture, and save point cloud data. (b) view recorded RGB-D image and use mouse to rotate and zoom the point cloud data on screen; (c) change the size and color of the
-     points on screen; (d) edit and crop existing point clouds. (e) stitch multiple point cloud data together(using the Iterative Closest Point Algorithm)
-     and demonstrate the process of registration step by step.
-
-   </p>
-   <p>
-    You can also check the <a href="https://drive.google.com/file/d/1tIjJFklwZ_KyMsSbFavCA7u2vSJE56Wy/view?usp=sharing"> poster </a> of our project.
-    </p>
-   <p>
-     The following video is a short demo of 3D registration of a still chair using our 3DKinect software.
-   </p>
-   <iframe src="https://drive.google.com/file/d/1KnZFweZT4mUcrd9IJn-QIPCapK8W1cCc/preview" width="640" height="480"></iframe>
-  <br>
-
+        <li>
+            <strong>3D Reconstruction:</strong> Undergraduate computer science project on 3D shape reconstruction from images.
+            [<a href="https://drive.google.com/file/d/1IS_OXb7clv2AK74qM2WEbDP4SgexX2h9/view?usp=sharing" target="_blank">Paper</a>].
+        </li>
+    </ul>
 
 </body>
 </html>
