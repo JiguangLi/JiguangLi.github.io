@@ -13,7 +13,7 @@
 <li><a href="/">Home</a></li>
 <li><a href="/portfolio">Portfolio</a></li>
 <li><a href="/cv">CV</a></li>
-<li><a href="/entropy">Entropy Dumping Ground</a></li>
+<li><a href="/entropy">Random</a></li>
 </ul>
     </nav>
 <div class="container">
