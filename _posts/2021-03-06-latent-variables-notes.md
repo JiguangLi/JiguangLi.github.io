@@ -6,6 +6,8 @@ permalink: /writing/latent-variable-models/
 <html>
 <head><meta charset="utf-8" />
 
+<link rel="stylesheet" type="text/css" href="/css/main.css?v=20260607" />
+
 <title>03-13-latent-variable-models</title>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
