@@ -1,35 +1,138 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<title>Jiguang Li</title>
-		<!-- link to main stylesheet -->
-		<link rel="stylesheet" type="text/css" href="/css/main.css">
-	</head>
-	<body>
-		<nav>
-    		<ul>
-        		<li><a href="/">Home</a></li>
-	        	<li><a href="/portfolio">Research</a></li>
-        		<li><a href="/cv">CV</a></li>
-				 <li><a href="/entropy">Random</a></li>
-    		</ul>
-		</nav>
-		<div class="container">
-    		<div class="blurb">
-        		<h1>Jiguang Li</h1>
-			<img src="jiguang_booth.jpg" width="180" height="200" id="jgl"/>
-				<p> Hello! I am a PhD student in <a href="https://www.chicagobooth.edu/faculty/academic-areas/econometrics-and-statistics"> Econometrics and Statistics</a> at the University of Chicago Booth School of Business, advised by <a href="http://veronikarock.com/"> Veronika Rockova</a>. I am broadly interested in Bayesian statistics, reinforcement learning, and psychometrics. Previously, I worked as a full-time research professional at the <a href="https://www.chicagobooth.edu/research/applied-ai">Center for Applied Artificial Intelligence</a> under the supervision of <a href= "https://sendhil.org/ "> Sendhil Mullainathan</a>.
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Jiguang Li, PhD student in Econometrics and Statistics at the University of Chicago Booth School of Business.">
+        <title>Jiguang Li</title>
+        <link rel="stylesheet" type="text/css" href="/css/main.css">
+    </head>
+    <body class="home-page">
+        <nav class="site-nav" aria-label="Primary navigation">
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/cv">CV</a></li>
+                <li><a href="/entropy">Writing</a></li>
+            </ul>
+        </nav>
 
-			    <p> Prior to Booth, I obtained my master's degree in <a href="https://statistics.yale.edu/">statistics </a> from Yale and a bachelor's degree in mathematics from <a href="http://www.middlebury.edu/">Middlebury College</a>.
-    	</div><!-- /.blurb -->
-		</div><!-- /.container -->
-		<footer>
-    		<ul>
-        		<li><a href="mailto:jiguang@chicagobooth.edu">Email:jiguang@chicagobooth.edu</a></li>
-        		<li><a href="https://github.com/jiguangli">Github Page</a></li>
-				<li><a href="https://scholar.google.com/citations?user=4xNVhQIAAAAJ&hl=en">Google Scholar</a></li>
-				<li><a href="https://twitter.com/jiguang_l">Twitter</a></li>
-			</ul>
-		</footer>
-	</body>
+        <main class="home-shell">
+            <section class="intro">
+                <div class="intro-copy">
+                    <p class="kicker">PhD student in Econometrics and Statistics</p>
+                    <h1>Jiguang Li</h1>
+                    <p class="lede">
+                        I develop Bayesian and machine-learning methods for adaptive decision-making and measurement,
+                        with applications in Bayesian optimization, reinforcement learning, and psychometrics.
+                    </p>
+                    <p>
+                        I am a PhD student in
+                        <a href="https://www.chicagobooth.edu/faculty/academic-areas/econometrics-and-statistics">Econometrics and Statistics</a>
+                        at the University of Chicago Booth School of Business, advised by
+                        <a href="http://veronikarock.com/">Veronika Ročková</a>. Previously, I worked as a full-time
+                        research professional at the
+                        <a href="https://www.chicagobooth.edu/research/applied-ai">Center for Applied Artificial Intelligence</a>
+                        under the supervision of <a href="https://sendhil.org/">Sendhil Mullainathan</a>.
+                    </p>
+                    <p>
+                        Before Booth, I received an M.S. in <a href="https://statistics.yale.edu/">Statistics</a>
+                        from Yale University and a B.A. in Mathematics from
+                        <a href="http://www.middlebury.edu/">Middlebury College</a>.
+                    </p>
+                    <div class="quick-links" aria-label="Profile links">
+                        <a href="/cv">CV</a>
+                        <a href="https://scholar.google.com/citations?user=4xNVhQIAAAAJ&amp;hl=en">Google Scholar</a>
+                        <a href="https://github.com/jiguangli">GitHub</a>
+                    </div>
+                </div>
+
+                <figure class="profile-card">
+                    <img src="/assets/profile.jpg" alt="Jiguang Li at the University of Chicago Booth School of Business" class="profile-photo">
+                    <figcaption>University of Chicago Booth School of Business</figcaption>
+                </figure>
+            </section>
+
+            <section class="home-section">
+                <h2>Publications and Preprints</h2>
+                <div class="work-list">
+                    <article>
+                        <h3>
+                            <a href="https://arxiv.org/abs/2606.00425">Empirical Likelihood with Generative AI</a>
+                        </h3>
+                        <p class="work-meta">
+                            <strong>Jiguang Li</strong>, Sid Kankanala, and Veronika Ročková. Submitted, 2026.
+                            <a href="https://github.com/JiguangLi/Empirical-Likelihood-with-Generative-AI">Code</a>
+                        </p>
+                        <p>Empirical likelihood methods for settings where generative AI can supply flexible auxiliary information.</p>
+                    </article>
+                    <article>
+                        <h3>
+                            <a href="https://arxiv.org/abs/2605.06564">Dynamic Treatment on Networks</a>
+                        </h3>
+                        <p class="work-meta">
+                            Bengusu Nar, <strong>Jiguang Li</strong>, Veronika Ročková, and Panos Toulis. Submitted, 2026.
+                        </p>
+                        <p>Methods for estimating and optimizing dynamic treatment policies under network interference.</p>
+                    </article>
+                    <article>
+                        <h3>
+                            <a href="https://arxiv.org/abs/2601.07094">Robust Bayesian Optimization via Tempered Posteriors</a>
+                        </h3>
+                        <p class="work-meta">
+                            <strong>Jiguang Li</strong> and Henry Luo. Submitted, 2026.
+                            <a href="https://github.com/JiguangLi/Bayesian-Optimization-via-Tempered-Posterior">Code</a>
+                        </p>
+                        <p>Tempered posterior methods for robust sequential optimization.</p>
+                    </article>
+                    <article>
+                        <h3>
+                            <a href="https://arxiv.org/pdf/2502.19275">Deep Computerized Adaptive Testing</a>
+                        </h3>
+                        <p class="work-meta">
+                            <strong>Jiguang Li</strong>, Robert Gibbons, and Veronika Ročková. Accepted at <em>Psychometrika</em>, 2026.
+                            <a href="https://github.com/JiguangLi/deep_CAT">Code</a>
+                        </p>
+                        <p>Deep learning methods for adaptive measurement, accepted at <em>Psychometrika</em>.</p>
+                    </article>
+                    <article>
+                        <h3>
+                            <a href="https://arxiv.org/abs/2310.17820">Sparse Bayesian Multidimensional Item Response Theory</a>
+                        </h3>
+                        <p class="work-meta">
+                            <strong>Jiguang Li</strong>, Robert Gibbons, and Veronika Ročková. <em>Journal of the American Statistical Association</em>, 2025.
+                            <a href="https://github.com/JiguangLi/sparse_bayesian_mirt">Code</a>
+                        </p>
+                        <p>Sparse Bayesian modeling for multidimensional psychometrics, published in <em>JASA</em>.</p>
+                    </article>
+                </div>
+            </section>
+
+            <section class="home-section secondary-section">
+                <h2>Earlier Writing</h2>
+                <div class="work-list compact-list">
+                    <article>
+                        <h3>
+                            <a href="https://drive.google.com/file/d/1qoNci86LfVH5hYBLwcNyNH8ewJEWJISf/view?usp=sharing">Mixing Markov Chains</a>
+                        </h3>
+                        <p>Expository writing on convex optimization methods for the fastest mixing Markov chain.</p>
+                    </article>
+                    <article>
+                        <h3>
+                            <a href="https://drive.google.com/open?id=17pjkWAlPFEv1R1vsN1Ja55ny77ZTIhVl">Undergraduate Thesis in Algebraic Combinatorics</a>
+                        </h3>
+                        <p>The Chevalley-Warning Theorem: Its Proofs, Generalizations, and Applications.</p>
+                    </article>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <ul>
+                <li><a href="mailto:jiguang@chicagobooth.edu">jiguang@chicagobooth.edu</a></li>
+                <li><a href="https://github.com/jiguangli">GitHub</a></li>
+                <li><a href="https://scholar.google.com/citations?user=4xNVhQIAAAAJ&amp;hl=en">Google Scholar</a></li>
+                <li><a href="https://twitter.com/jiguang_l">Twitter</a></li>
+            </ul>
+        </footer>
+    </body>
 </html>
