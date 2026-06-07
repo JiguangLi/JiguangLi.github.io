@@ -1,3 +1,8 @@
+---
+layout: null
+title: Latent Variable Models Notes
+permalink: /writing/latent-variable-models/
+---
 <html>
 <head><meta charset="utf-8" />
 

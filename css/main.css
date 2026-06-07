@@ -95,6 +95,7 @@ footer ul li {
 
 .home-shell {
     max-width: 68rem;
+    padding: 54px 0 34px;
 }
 
 .intro {
@@ -227,6 +228,10 @@ footer ul li {
 @media (max-width: 760px) {
     body {
         width: min(100% - 28px, 42rem);
+    }
+
+    .home-shell {
+        padding-top: 30px;
     }
 
     .site-nav {
