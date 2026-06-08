@@ -12,23 +12,7 @@
 \usepackage{fancyhdr}
 \pagestyle{empty}
 \setlength{\tabcolsep}{0em}
-
-% indentsection style, used for sections that aren't already in lists
-% that need indentation to the level of all text in the document
-\newenvironment{indentsection}[1]%
-{\begin{list}{}%
-	{\setlength{\leftmargin}{#1}}%
-	\item[]%
-}
-{\end{list}}
-
-% opposite of above; bump a section back toward the left margin
-\newenvironment{unindentsection}[1]%
-{\begin{list}{}%
-	{\setlength{\leftmargin}{-0.4#1}}%
-	\item[]%
-}
-{\end{list}}
+\hypersetup{colorlinks=true,urlcolor=black,linkcolor=black}
 
 % format two pieces of text, one left aligned and one right aligned
 \newcommand{\headerrow}[2]
@@ -37,111 +21,92 @@
 	#2 \\
 \end{tabular*}}
 
-% make "C++" look pretty when used in text by touching up the plus signs
-\newcommand{\CPP}
-{C\nolinebreak[4]\hspace{-.05em}\raisebox{.22ex}{\footnotesize\bf ++}}
+% compact section spacing
+\newcommand{\sectionrule}{\vspace{0.08cm}\hrule\vspace{-0.18cm}}
 
-%\pagestyle{fancy}
-%\fancyhf{}
-%\rhead{Curriculum Vitae (Jiguang Li)}
-%\lhead{University of Michigan Statistics P.h.D}
-
-
-% and the actual content starts here
 \begin{document}
 
 \begin{center}
 {\LARGE \textbf{Jiguang Li}}
 
-\ \ \textbullet jiguang@chicagobooth.edu \ \ \textbullet
-\ \ (312) 366-6667 \ \textbullet
-\ \  Website: \url{https://jiguangli.github.io/} \ \
-\linebreak \textbullet 5807 S Woodlawn Ave\ \ \textbullet
-\ \ Chicago, IL 60637\ \
+\vspace{0.05cm}
+Ph.D. Candidate in Econometrics and Statistics, University of Chicago Booth School of Business
+
+\vspace{0.05cm}
+\href{mailto:jiguang@chicagobooth.edu}{jiguang@chicagobooth.edu}
+\ \textbullet\ 
+\href{https://jiguangli.github.io/}{jiguangli.github.io}
+\ \textbullet\ 
+\href{https://scholar.google.com/citations?user=4xNVhQIAAAAJ}{Google Scholar}
+\ \textbullet\ 
+\href{https://github.com/jiguangli}{GitHub}
 \end{center}
 
+\sectionrule
+\subsection*{Research Interests}
+My research develops Bayesian methods for robust inference and adaptive decision-making, especially in settings with latent structure, sequential data collection, or partial model specification. I draw on nonparametric Bayes, reinforcement learning, and statistical computing to study problems in econometrics and psychometrics.
 
-\hrule
+
+\sectionrule
 \subsection*{Education}
 
 \begin{itemize}
 	\parskip=0em
-	    \item 
-	       \headerrow
+	\item
+	\headerrow
 		{\textbf{The University of Chicago Booth School of Business}}
-		{\textbf{Chicago, IL} \emph{Sep 2022 -- Jun 2027}}
+		{\textbf{Chicago, IL} \emph{Sep 2022 -- Jun 2027 expected}}
 	\begin{itemize*}
-	
-		\item Ph.D. student in Econometrics and Statistics and M.B.A. candidate, supervised by \emph{Veronika Ro\v{c}kov\'{a}}
-		\item Research interests: Bayesian statistics, reinforcement learning, psychometrics
-		\end{itemize*}
-	
-		\item 
-	       \headerrow
+		\item Ph.D. in Econometrics and Statistics; M.B.A. Advisor: \emph{Veronika Ro\v{c}kov\'{a}}.
+		\item Research areas: Bayesian statistics, reinforcement learning.
+	\end{itemize*}
+
+	\item
+	\headerrow
 		{\textbf{Yale University}}
 		{\textbf{New Haven, CT} \emph{Aug 2019 -- May 2020}}
 	\begin{itemize*}
-	
-		\item Master of Arts in Statistics
-		 \end{itemize*}
-	
+		\item M.A. in Statistics.
+	\end{itemize*}
 
-	\item 
+	\item
 	\headerrow
 		{\textbf{Middlebury College}}
 		{\textbf{Middlebury, VT} \emph{Sep 2015 -- May 2019}}
 	\begin{itemize*}
-	
-		\item Bachelor of Arts in Mathematics and Bachelor of Arts in Computer Science
-		\item Summa Cum Laude, Highest Honors in Mathematics, Davis UWC Scholar
+		\item B.A. in Mathematics; B.A. in Computer Science.
+		\item Summa Cum Laude; Highest Honors in Mathematics; Davis UWC Scholar.
 	\end{itemize*}
-	
-	
-
-\end{itemize}					
-\hrule
-\vspace {-0.2cm}
-\subsection*{Publications}
-\begin{itemize}
-    \item \textbf{Jiguang Li}, Sid Kankanala, and Veronika Ro\v{c}kov\'{a}. "Empirical Likelihood with Generative AI." Submitted, 2026. [\href{https://arxiv.org/abs/2606.00425}{paper link}][\href{https://github.com/JiguangLi/Empirical-Likelihood-with-Generative-AI}{code link}]
-    
-     \item Bengusu Nar, \textbf{Jiguang Li}, Veronika Ro\v{c}kov\'{a}, and Panos Toulis. "Dynamic Treatment on Networks." Submitted, 2026.
-    [\href{https://arxiv.org/pdf/2605.06564}{paper link}]
-
-     \item \textbf{Jiguang Li} and Henry Luo. "Robust Bayesian Optimization via Tempered Posteriors." Submitted, 2026.
-    [\href{https://arxiv.org/abs/2601.07094}{paper link}][\href{https://github.com/JiguangLi/Bayesian-Optimization-via-Tempered-Posterior}{code link}]
-    
-    \item \textbf{Jiguang Li}, Robert Gibbons, and Veronika Ro\v{c}kov\'{a}. "Deep Computerized Adaptive Testing." Accepted for publication in \textit{Psychometrika}, 2026.
-    [\href{https://arxiv.org/pdf/2502.19275}{paper link}][\href{https://github.com/JiguangLi/deep_CAT}{code link}]
-
-    \item \textbf{Jiguang Li}, Robert Gibbons, and Veronika Ro\v{c}kov\'{a}. "Sparse Bayesian Multidimensional Item Response Theory." \textit{Journal of the American Statistical Association}, 2025. [\href{https://arxiv.org/abs/2310.17820}{paper link}][\href{https://github.com/JiguangLi/sparse_bayesian_mirt}{code link}]
-
-    
 \end{itemize}
 
-\hrule
+\sectionrule
+\subsection*{Publications and Preprints}
+\begin{itemize}
+	\item \textbf{Jiguang Li}, Sid Kankanala, and Veronika Ro\v{c}kov\'{a}. ``Empirical Likelihood with Generative AI.'' Submitted, 2026. [\href{https://arxiv.org/abs/2606.00425}{paper}][\href{https://github.com/JiguangLi/Empirical-Likelihood-with-Generative-AI}{code}]
 
-\vspace {-0.2cm}
-\subsection*{Core Skills}
+	\item Bengusu Nar, \textbf{Jiguang Li}, Veronika Ro\v{c}kov\'{a}, and Panos Toulis. ``Dynamic Treatment on Networks.'' Submitted, 2026. [\href{https://arxiv.org/pdf/2605.06564}{paper}]
 
-\vspace {0.1cm}
+	\item \textbf{Jiguang Li} and Henry Luo. ``Robust Bayesian Optimization via Tempered Posteriors.'' Submitted, 2026. [\href{https://arxiv.org/abs/2601.07094}{paper}][\href{https://github.com/JiguangLi/Bayesian-Optimization-via-Tempered-Posterior}{code}]
+
+	\item \textbf{Jiguang Li}, Robert Gibbons, and Veronika Ro\v{c}kov\'{a}. ``Deep Computerized Adaptive Testing.'' \textit{Psychometrika}, 2026. [\href{https://arxiv.org/pdf/2502.19275}{paper}][\href{https://github.com/JiguangLi/deep_CAT}{code}]
+
+	\item \textbf{Jiguang Li}, Robert Gibbons, and Veronika Ro\v{c}kov\'{a}. ``Sparse Bayesian Multidimensional Item Response Theory.'' \textit{Journal of the American Statistical Association}, 2025. [\href{https://arxiv.org/abs/2310.17820}{paper}][\href{https://github.com/JiguangLi/sparse_bayesian_mirt}{code}]
+\end{itemize}
+
+\sectionrule
+\subsection*{Technical Skills}
 \begin{description*}
-	\vspace {-0.2cm}
-	\item[Languages:] Chinese (native), English (fluent), Spanish (college-level intermediate), Italian (IB ab initio)
-	\item[Programming Languages:]
-	Python (PyTorch), R, Java, \LaTeX, basic JavaScript, HTML, and C
-        \end{description*}
+	\item[Methods:] Bayesian inference, nonparametric Bayes, reinforcement learning, Bayesian optimization, moment restriction models, latent-variable models, causal machine learning, high-dimensional statistics.
+	\item[Programming:] Python (PyTorch, PyMC3), R, Java, C, JavaScript, HTML, \LaTeX.
+	\item[Languages:] Chinese (native), English (fluent), Spanish (intermediate), Italian (basic).
+\end{description*}
 
-
-
-\hrule
-\vspace {-0.2cm}
-\subsection*{Experience}
+\sectionrule
+\subsection*{Research and Industry Experience}
 \begin{itemize}
 	\parskip=0em
 
-
-        \item
+	\item
 	\headerrow
 		{\textbf{Applied Scientist Intern}}
 		{\textbf{Amazon.com, Inc.}}
@@ -150,12 +115,11 @@
 		{\emph{Grocery Economics \& Optimization Science}}
 		{\emph{Jun 2025 -- Aug 2025}}
 	\begin{itemize*}
-		\vspace {-0.1cm}
 		\item Built a constrained optimizer for media-channel budget allocation using a Bayesian marketing mix model for Whole Foods and Amazon Fresh, projecting an 8\% ROAS lift with uncertainty quantification.
-            \item Built interactive visualization tools to make the optimization workflow interpretable for stakeholders.
+		\item Developed interactive visualization tools to make the optimization workflow interpretable for stakeholders.
 	\end{itemize*}
 
-        \item
+	\item
 	\headerrow
 		{\textbf{Full-Time Research Professional, Center for Applied AI}}
 		{\textbf{The University of Chicago}}
@@ -164,57 +128,48 @@
 		{\emph{Supervised by Sendhil Mullainathan}}
 		{\emph{Aug 2020 -- Jul 2022}}
 	\begin{itemize*}
-		\vspace {-0.1cm}
-		\item Developed PyTorch pipelines for medical imaging (CNNs, MAML, multi-GPU) and StyleGAN2.
+		\item Developed PyTorch pipelines for medical imaging, including CNNs, MAML, multi-GPU training, and StyleGAN2.
 		\item Built Bayesian inference workflows in PyMC3/HMC for educational testing; analyzed large-scale item-response, DICOM X-ray, and conviction datasets.
 	\end{itemize*}
-	
-      \item
+
+	\item
 	\headerrow
-		{\textbf{\href{https://drive.google.com/file/d/1s9yV_41rw2_1R8lJbcArTS0LL0kR1LJc/view?usp=sharing}{Summer Research Assistant on Astrostatistics}}}
+		{\textbf{\href{https://drive.google.com/file/d/1s9yV_41rw2_1R8lJbcArTS0LL0kR1LJc/view?usp=sharing}{Summer Research Assistant in Astrostatistics}}}
 		{\textbf{California Institute of Technology}}
 	\\
 	\headerrow
 		{\emph{Supervised by George Djorgovski and Eilat Glikman}}
-		{\emph{Summers 2017--2019}}
+		{\emph{Summers 2017 -- 2019}}
 	\begin{itemize*}
-		\vspace {-0.1cm}
-		\item Implemented spectral continuum normalization methods in Python.
-		\item Built a quasar variability analysis pipeline and implemented two-sample tests; received the Caltech VURP award in 2017.
-		
-		\end{itemize*}
-\end{itemize}	
-
-\vspace {-0.2cm}
-\hrule	
-\subsection*{Professional Service}
-\begin{itemize}
-    \item \textbf{Journal Reviewer}: \textit{Bayesian Analysis}, \textit{Operations Research}, \textit{Psychometrika}, \textit{Statistics and Computing}.
-    \item \textbf{Conference Reviewer}: NeurIPS.
-    \item \textbf{Teaching Assistant}: Business Statistics (BUSN41000, Booth), Linear Algebra (MATH0200, Middlebury), Macro Theory (ECON0250, Middlebury).
+		\item Implemented spectral continuum normalization methods and quasar variability analysis pipelines in Python.
+		\item Developed two-sample testing workflows; received the Caltech VURP award in 2017.
+	\end{itemize*}
 \end{itemize}
 
+\sectionrule
+\subsection*{Professional Service and Teaching}
+\begin{itemize}
+	\item \textbf{Journal Reviewer}: \textit{Bayesian Analysis}, \textit{Operations Research}, \textit{Psychometrika}, \textit{Statistics and Computing}.
+	\item \textbf{Conference Reviewer}: NeurIPS.
+	\item \textbf{Teaching Assistant}: Business Statistics (BUSN41000, Chicago Booth), Linear Algebra (MATH0200, Middlebury), Macro Theory (ECON0250, Middlebury).
+\end{itemize}
 
-
-\vspace {-0.2cm}
-\hrule	
+\sectionrule
 \subsection*{Presentations}
 \begin{itemize}
-    \item Contributed talk, J-ISBA Conference (Jun 2024, Venice, Italy)
-    \item Contributed poster, ISBA Conference (Jul 2024, Venice, Italy)
-    \item Invited talk, Chicago Booth Healthcare Initiatives (Nov 2024, Chicago, IL)
-    \item Invited talk, Department of Public Health Sciences at UChicago (Oct 2025, Chicago, IL)
-    \item Invited talk, ICSA Conference (Jun 2026, Arlington, VA)
+	\item Invited talk, ICSA Conference (Jun 2026, Arlington, VA)
+	\item Invited talk, Department of Public Health Sciences at UChicago (Oct 2025, Chicago, IL)
+	\item Invited talk, Chicago Booth Healthcare Initiatives (Nov 2024, Chicago, IL)
+	\item Contributed poster, ISBA Conference (Jul 2024, Venice, Italy)
+	\item Contributed talk, J-ISBA Conference (Jun 2024, Venice, Italy)
 \end{itemize}
 
-\hrule
-
-
+\sectionrule
 \subsection*{Selected Coursework}
 \begin{itemize}
-    \item \textbf{Economics}: Bayesian Econometrics, Causal Machine Learning, Empirical Analysis, Price Theory 2 \& 3, Theory of Income 1.
-    \item \textbf{Mathematics}: Advanced Probability, Measure Theory, Optimization Techniques, Spectral Graph Theory.
-    \item \textbf{MBA}: Financial Accounting, Marketing Data Science, Managing in Organizations, Investments, Operations Management.
-    \item \textbf{Statistics/ML}: Bayesian Deep Learning, Fundamentals of Deep Learning, High-dimensional Hypothesis Testing, Linear Models, Mathematical Statistics 2.   
+	\item \textbf{Statistics/ML}: Bayesian Deep Learning, Fundamentals of Deep Learning, High-Dimensional Hypothesis Testing, Linear Models, Mathematical Statistics.
+	\item \textbf{Economics}: Bayesian Econometrics, Causal Machine Learning, Empirical Analysis, Price Theory, Theory of Income.
+	\item \textbf{Mathematics}: Advanced Probability, Measure Theory, Optimization Techniques, Spectral Graph Theory.
+	\item \textbf{MBA}: Financial Accounting, Marketing Data Science, Managing in Organizations, Investments, Operations Management.
 \end{itemize}
 \end{document}
