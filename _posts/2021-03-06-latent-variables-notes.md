@@ -1,14 +1,15 @@
 ---
 layout: null
-title: Latent Variable Models Notes
+title: Notes on Latent Variable Models
 permalink: /writing/latent-variable-models/
 ---
 <html>
 <head><meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<link rel="stylesheet" type="text/css" href="/css/main.css?v=20260607" />
+<link rel="stylesheet" type="text/css" href="/css/main.css?v=20260905" />
 
-<title>03-13-latent-variable-models</title>
+<title>Notes on Latent Variable Models</title>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>

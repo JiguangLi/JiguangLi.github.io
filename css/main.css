@@ -107,6 +107,7 @@ footer ul li {
 
 .intro-copy {
     max-width: 43rem;
+    min-width: 0;
 }
 
 .intro-copy p {
@@ -119,6 +120,15 @@ footer ul li {
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
     font-size: 0.92em;
     font-weight: bold;
+}
+
+.intro-copy .market-note {
+    margin: -2px 0 22px;
+    color: #6e7f52;
+    font-family:'Helvetica', 'Arial', 'Sans-Serif';
+    font-size: 0.95em;
+    font-weight: bold;
+    line-height: 1.4;
 }
 
 .lede {
@@ -227,7 +237,7 @@ footer ul li {
 
 @media (max-width: 760px) {
     body {
-        width: min(100% - 28px, 42rem);
+        width: min(calc(100% - 28px), 42rem);
     }
 
     .home-shell {
