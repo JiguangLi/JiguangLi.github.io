@@ -3,3 +3,13 @@ markdown: kramdown
 kramdown:
   parse_block_html: true
 permalink: /blog/:year/:month/:day/:title
+
+# Keep legacy writing in the repository without publishing it on the website.
+exclude:
+  - _posts/2020-12-23-first-post.md
+  - _posts/2020-12-24-a-serious-post.html
+  - _posts/2021-02-22-spectral-clustering.html
+  - _posts/2021-06-12-Metropolis-Hastings.html
+  - _posts/2021-11-01-Indian-Buffet.html
+  - _posts/2021-12-19-Bayesian-Item-Response-Theory.html
+  - _posts/2022-05-06-cuda-out-of-memory.html
